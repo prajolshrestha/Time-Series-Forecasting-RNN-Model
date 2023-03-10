@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 
 #Create your own data
 series = np.sin(0.1 * np.arange(200)) #create sin series with 200 values
-series
 
 plt.plot(series)
 plt.show()
