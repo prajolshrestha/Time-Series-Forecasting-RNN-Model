@@ -35,7 +35,7 @@ i = Input(shape = (T,))
 x = Dense(1)(i)
 
 model = Model(i,x)
-model.compile(loss='mse', optimizer = Adam(lr=0.1),)
+model.compile(loss='mse', optimizer = Adam(learning_rate=0.1),)
 
 #train
 #train on first half of data and validate on second half
