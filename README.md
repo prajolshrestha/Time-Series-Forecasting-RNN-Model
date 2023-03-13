@@ -8,7 +8,8 @@ Overview
 The code uses a simple autoregressive linear model to forecast future values of a time series based on its past values. The input data is a sin wave series with 200 values. The code creates a dataset of input/output pairs from the time series data and trains the autoregressive linear model to predict future values based on the past values. The model is then used to forecast future values of the time series based on its own predictions.
 
 Dependencies
-The code was written using Python 3. The following Python packages are required to run the code:
+The code was written using Python 3. 
+The following Python packages are required to run the code:
 
 tensorflow
 numpy
@@ -16,7 +17,6 @@ pandas
 matplotlib
 
 Code Structure
-The code has the following structure:
 
 Import the required libraries
 Create the input time series data
