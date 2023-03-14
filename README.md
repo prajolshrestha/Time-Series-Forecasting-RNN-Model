@@ -7,9 +7,11 @@ Dataset
 The code generates a synthetic dataset by taking the sine of every tenth value between 0 and 400. 
 This dataset is then used for training and testing the models.
 
+**Linear Model**
 Autoregressive Linear Model
 The autoregressive linear model is a simple linear regression model that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model is a poor fit for the dataset, as can be seen from the predictions.
 
+**NonLinear Model**
 SimpleRNN Model
 The SimpleRNN model is a recurrent neural network that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model performs much better than the autoregressive linear model, as can be seen from the predictions.
 
