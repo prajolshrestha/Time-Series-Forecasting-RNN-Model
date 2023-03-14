@@ -1,4 +1,4 @@
-# RecurentNeuralNetwork-RNN
+# DeepRecurentNeuralNetwork-RNN
 
 This code is for time series forecasting using TensorFlow and Keras. 
 The code contains implementation of three different models - Autoregressive Linear Model, SimpleRNN Model, GRU Model and LSTM Model.
