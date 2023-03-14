@@ -1,31 +1,25 @@
 # RecurentNeuralNetwork-RNN
 
-Time Series Forecasting with Autoregressive Linear Model
+This code is for time series forecasting using TensorFlow and Keras. 
+The code contains implementation of three different models - Autoregressive Linear Model, SimpleRNN Model, GRU Model and LSTM Model.
 
-This repository contains code for forecasting time series data using an autoregressive linear model in TensorFlow.
+Dataset
+The code generates a synthetic dataset by taking the sine of every tenth value between 0 and 400. 
+This dataset is then used for training and testing the models.
 
-Overview
-The code uses a simple autoregressive linear model to forecast future values of a time series based on its past values. The input data is a sin wave series with 200 values. The code creates a dataset of input/output pairs from the time series data and trains the autoregressive linear model to predict future values based on the past values. The model is then used to forecast future values of the time series based on its own predictions.
+Autoregressive Linear Model
+The autoregressive linear model is a simple linear regression model that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model is a poor fit for the dataset, as can be seen from the predictions.
 
-Dependencies
-The code was written using Python 3. 
-The following Python packages are required to run the code:
+SimpleRNN Model
+The SimpleRNN model is a recurrent neural network that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model performs much better than the autoregressive linear model, as can be seen from the predictions.
 
-tensorflow
-numpy
-pandas
-matplotlib
+LSTM and GRU networks are two popular types of RNNs that are designed to overcome the "vanishing gradient" problem that can occur with traditional RNNs.
 
-Code Structure
+LSTM Model
+The LSTM model is a recurrent neural network that is capable of handling long-term dependencies. The model is trained using the first half of the data and tested on the second half. The model performs better than the SimpleRNN model and the autoregressive linear model, as can be seen from the predictions.
 
-Import the required libraries
-Create the input time series data
-Build the dataset of input/output pairs
-Define the autoregressive linear model
-Train the model
-Plot the training and validation losses
-Use the model to make predictions on the validation set
-Plot the predicted values against the true values for the validation set
-Use the model to make predictions on future values
-Plot the predicted values against the true values for the future values
+GRU Model
+The GRU model is similar to LSTM but with few parameters.The model is trained on the first half of the data and validated on the second half. The GRU model does a similar job of forecasting to the LSTM model.
 
+Conclusion
+The LSTM model is the best fit for the dataset, as it is capable of handling long-term dependencies.
