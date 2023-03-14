@@ -1,7 +1,7 @@
 # DeepRecurentNeuralNetwork-RNN
 
 This code is for time series forecasting using TensorFlow and Keras. 
-The code contains implementation of three different models - Autoregressive Linear Model, SimpleRNN Model, GRU Model and LSTM Model.
+The code contains implementation of four different models - Autoregressive Linear Model, SimpleRNN Model, GRU Model and LSTM Model.
 
 Dataset
 The code generates a synthetic dataset by taking the sine of every tenth value between 0 and 400. 
