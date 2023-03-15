@@ -11,6 +11,10 @@ Following dataset has been used in different task:
 4. Random data Forecast (No temporal corelation between nearby data)
 5. MNIST
 
+# Problem
+1. Short Distance Forecast
+2. Long Distance Forecast
+
 # Linear Model
 ## Autoregressive Linear Model
 The autoregressive linear model is a simple linear regression model that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model is a poor fit for the dataset, as can be seen from the predictions.
