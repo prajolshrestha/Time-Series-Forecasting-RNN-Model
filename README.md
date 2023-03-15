@@ -4,11 +4,15 @@ This code is for time series forecasting using TensorFlow and Keras.
 The code contains implementation of four different models - Autoregressive Linear Model, SimpleRNN Model, GRU Model and LSTM Model.
 
 # Dataset
-The code generates a synthetic dataset by taking the sine of every tenth value between 0 and 400. 
-This dataset is then used for training and testing the models.
+Following dataset has been used in different task:
+1. Sine Wave forecast
+2. Sine Wave with Noise Forecast
+3. Nonlinear dataset forecast
+4. Random data Forecast (No temporal corelation between nearby data)
+5. MNIST
 
 # Linear Model
-##Autoregressive Linear Model
+## Autoregressive Linear Model
 The autoregressive linear model is a simple linear regression model that uses the past sequence values to predict the next value. The model is trained using the first half of the data and tested on the second half. The model is a poor fit for the dataset, as can be seen from the predictions.
 
 # NonLinear Model
@@ -25,3 +29,8 @@ The GRU model is similar to LSTM but with few parameters.The model is trained on
 
 # Conclusion
 The LSTM model is the best fit for the dataset, as it is capable of handling long-term dependencies.
+GlobalMaxPooling is great tool to enhance power of LSTM.
+
+Q. RNN only for sequence data forecast?
+==> Works for Image classification as well.
+
